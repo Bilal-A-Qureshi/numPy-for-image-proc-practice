@@ -1,0 +1,29 @@
+//using python list
+
+list_two = list(range(1,4))
+list_three = list(range(1,4))
+list_sum = []
+
+for index in range(3):
+    list_two[index] = list_two[index] ** 2
+    list_three[index] = list_three[index] ** 3
+    list_sum.append(list_three[index] + list_two[index])
+print(list_sum)
+
+//using numpy
+import numpy as np
+array_two = np.arange(1, 4) **2
+array_three = np.arange(1, 4) **3
+print(array_two + array_three)
+
+
+
+sample_arr = np.array([1,2,3])
+np.power(sample_arr, 4)
+
+sample_arr = np.array([1,2,3])
+np.exp(sample_arr)
+
+sample_arr = np.array([1,2,3])
+np.log(sample_arr)
+
