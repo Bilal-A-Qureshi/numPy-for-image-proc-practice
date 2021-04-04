@@ -1,0 +1,7 @@
+x = np.arange(3)
+y = np.arange(3)
+z = np.arange(3)
+
+multi_array = np.array([x,y,z])
+print(multi_array)
+print(multi_array.shape)
