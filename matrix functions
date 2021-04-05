@@ -1,0 +1,22 @@
+import numpy as np
+array_sample = np.arange(18).reshape(2,3,3)
+print(array_sample)
+array_sample = np.arange(18).reshape(3,3,2)
+print(array_sample)
+
+print(array_sample[1,:,:])
+
+comparison = array_sample > 5
+array_sample[comparison]
+print(array_sample.max())
+print(array_sample.min())
+
+array_sample.ravel()
+print(array_sample.ravel())
+
+print(array_sample.transpose())
+
+print(np.resize(array_sample,(6,6)))
+
+print(np.ones((2,2), dtype = int))
+
